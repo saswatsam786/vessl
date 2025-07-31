@@ -1,6 +1,6 @@
 module github.com/saswatsam786/vessl
 
-go 1.24.2
+go 1.24
 
 // Vessl - Docker Container Management CLI
 // A powerful command-line interface for managing Docker containers
