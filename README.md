@@ -18,13 +18,19 @@ A powerful command-line interface for managing Docker containers, built with Go 
 
 ## 📦 Installation
 
-### Option 1: Go Install (Recommended)
+### Option 1: Homebrew (Recommended)
+
+```bash
+brew install saswatsam786/tap/vessl
+```
+
+### Option 2: Go Install
 
 ```bash
 go install github.com/saswatsam786/vessl@latest
 ```
 
-### Option 2: Build from Source
+### Option 3: Build from Source
 
 ```bash
 git clone https://github.com/saswatsam786/vessl.git
@@ -33,7 +39,7 @@ go build -o vessl
 sudo mv vessl /usr/local/bin/
 ```
 
-### Option 3: Download Binary
+### Option 4: Download Binary
 
 Download the latest release from [GitHub Releases](https://github.com/saswatsam786/vessl/releases)
 
