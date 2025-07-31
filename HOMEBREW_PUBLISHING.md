@@ -47,21 +47,11 @@ This guide will help you publish the Vessl CLI tool to Homebrew so users can ins
    - Title: `v1.0.0`
    - Upload the binaries from the `build/` directory
 
-## Step 2: Create Homebrew Tap
+## Step 2: Use Your Main Repository (Recommended)
 
-1. **Create a new repository** called `homebrew-tap`:
+Your Homebrew formula will be automatically updated in your main repository. No need to create a separate repository!
 
-   - Go to GitHub and create a new repository
-   - Name it: `homebrew-tap`
-   - Make it public
-
-2. **Add the formula**:
-
-   ```bash
-   git clone https://github.com/saswatsam786/homebrew-tap.git
-   cd homebrew-tap
-   mkdir Formula
-   ```
+The formula will be in the `Formula/` directory of your main repository.
 
 3. **Create the formula file** (`Formula/vessl.rb`):
 
@@ -126,9 +116,9 @@ This guide will help you publish the Vessl CLI tool to Homebrew so users can ins
    brew install --build-from-source ./Formula/vessl.rb
    ```
 
-2. **Test from your tap**:
+2. **Test from your repository**:
    ```bash
-   brew tap saswatsam786/tap
+   brew tap saswatsam786/vessl
    brew install vessl
    ```
 

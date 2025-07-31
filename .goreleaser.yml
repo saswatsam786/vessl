@@ -62,7 +62,7 @@ brews:
     description: "A powerful command-line interface for managing Docker containers"
     repository:
       owner: saswatsam786
-      name: homebrew-tap
+      name: vessl
     commit_author:
       name: Saswat Samal
       email: saswatsam786@gmail.com
