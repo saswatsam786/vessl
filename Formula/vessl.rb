@@ -5,20 +5,20 @@
 class Vessl < Formula
   desc "A powerful command-line interface for managing Docker containers"
   homepage "https://github.com/saswatsam786/vessl"
-  version "1.0.1-next"
+  version "1.0.4-next"
 
   on_macos do
     on_intel do
-      url "https://github.com/saswatsam786/vessl/releases/download/v1.0.0/vessl_Darwin_x86_64.tar.gz"
-      sha256 "6d8c557008645e037e2cd7a30e557263ddc782c6c1afd64a400e2c61cba8f8b1"
+      url "https://github.com/saswatsam786/vessl/releases/download/v1.0.3/vessl_Darwin_x86_64.tar.gz"
+      sha256 "100d59b97bc78c969b94c400aca66dde24fee6ae05957904ddd3b0a0a81e8e38"
 
       def install
         bin.install "vessl"
       end
     end
     on_arm do
-      url "https://github.com/saswatsam786/vessl/releases/download/v1.0.0/vessl_Darwin_arm64.tar.gz"
-      sha256 "8c7c4431d03abf526eaf6bcafabf27fd636d89d16d4adda4c7d9136f8b5958dd"
+      url "https://github.com/saswatsam786/vessl/releases/download/v1.0.3/vessl_Darwin_arm64.tar.gz"
+      sha256 "085b0f13bf17d14baba51857ce844a4955dec4ad0d5fd915b0ecb8edca223f1e"
 
       def install
         bin.install "vessl"
@@ -29,8 +29,8 @@ class Vessl < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/saswatsam786/vessl/releases/download/v1.0.0/vessl_Linux_x86_64.tar.gz"
-        sha256 "980f7a2167bec99348549aa71b5e65160dc2cea1046f2f627d113ba5e2032b16"
+        url "https://github.com/saswatsam786/vessl/releases/download/v1.0.3/vessl_Linux_x86_64.tar.gz"
+        sha256 "15ec2130e26fdfbd92ec85c5b53c72e17c3d664acccef83cc83b021a87864485"
 
         def install
           bin.install "vessl"
@@ -39,8 +39,8 @@ class Vessl < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/saswatsam786/vessl/releases/download/v1.0.0/vessl_Linux_arm64.tar.gz"
-        sha256 "780a03d21da1455b4540a37a1e38987ef28b62deae8d5477c73b7d8d8a2e994f"
+        url "https://github.com/saswatsam786/vessl/releases/download/v1.0.3/vessl_Linux_arm64.tar.gz"
+        sha256 "c5a6af2d7f499fa4162252ac97f10c094efcc442f08c1ffbc360bdf966526bef"
 
         def install
           bin.install "vessl"
