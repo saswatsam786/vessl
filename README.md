@@ -21,7 +21,8 @@ A powerful command-line interface for managing Docker containers, built with Go 
 ### Option 1: Homebrew (Recommended)
 
 ```bash
-brew install saswatsam786/vessl/vessl
+brew tap saswatsam786/vessl
+brew install vessl
 ```
 
 ### Option 2: Go Install
